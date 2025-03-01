@@ -103,7 +103,7 @@ options:
 python app.py -u http://example.com -w {path-to-wordlist}.txt
 ```
 
-This command will:
+📌 This command will:
 - -u http://example.com → Specifies the target URL.
 - -w admin_paths.txt → Loads a wordlist of potential admin paths.
 
@@ -115,7 +115,7 @@ This command will:
 python app.py -u http://example.com -w admin_paths.txt -t 5
 ```
 
-This command will:
+📌 This command will:
 - -t 5 → Uses 5 threads to speed up the scan.
 - Can use t 1 to t 10
 
@@ -125,6 +125,80 @@ This command will:
 python app.py -u http://example.com -w admin_paths.txt -X POST
 ```
 
-This command will:
+📌 This command will:
 - -X POST → Uses the POST method instead of GET.
 - Can use -X GET, POST, HEAD, PUT, DELETE
+
+### Set a delay between requests to avoid rate-limiting:
+
+```bash
+python panelfox.py -u http://example.com -w admin_paths.txt --delay 2
+```
+
+📌 This command will:
+- -delay 2 → Waits 2 seconds between each request.
+
+### Use a proxy for anonymity:
+```bash
+python panelfox.py -u http://example.com -w admin_paths.txt -p proxies.txt
+```
+
+📌 This command will:
+- -p proxies.txt → Uses a list of proxies to mask the source IP.
+
+### Save results to a file:
+```bash
+python panelfox.py -u http://example.com -w admin_paths.txt -o results.txt
+```
+
+📌 This command will:
+- -o results.txt → Saves found admin panels to results.txt.
+
+## 📚 Advanced Usage
+
+### Bypass security using custom headers:
+```bash
+python panelfox.py -u http://example.com -w admin_paths.txt -H "X-Forwarded-For: 127.0.0.1"
+```
+
+📌 This command will:
+- -H "X-Forwarded-For: 127.0.0.1" → Spoofs the request header to bypass IP-based restrictions.
+
+### Use a User-Agent list to evade bot detection:
+```bash
+python panelfox.py -u http://example.com -w admin_paths.txt --user-agent user_agents.txt
+```
+📌 This command will:
+- --user-agent user_agents.txt → Rotates User-Agent strings from user_agents.txt to mimic real users.
+
+### Save HTTP responses for later analysis:
+```bash
+python panelfox.py -u http://example.com -w admin_paths.txt --save-responses
+```
+
+📌 This command will:
+- --save-responses → Stores raw responses for further analysis.
+
+### Filter results by specific HTTP status codes:
+```bash
+python panelfox.py -u http://example.com -w admin_paths.txt --status-code-filter 200
+```
+
+📌 This command will:
+- --status-code-filter 200 → Only displays results with status code 200 (OK).
+
+### Ignore SSL certificate warnings for HTTPS targets:
+```bash
+python panelfox.py -u https://example.com -w admin_paths.txt -I
+```
+
+📌 This command will:
+- -I → Ignores SSL verification errors (useful for self-signed certificates).
+🔹 Enable logging for better debugging:
+bash
+Copy
+Edit
+python panelfox.py -u http://example.com -w admin_paths.txt -l
+📌 Explanation:
+
+-l → Logs all requests and responses.
