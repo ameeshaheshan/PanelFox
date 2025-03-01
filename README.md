@@ -201,3 +201,20 @@ python app.py -u http://example.com -w {path-to-wordlist}.txt -l
 ```
 📌 This command will:
 - -l → Logs all requests and responses.
+
+## ⚠️ Disclaimer
+
+This tool is for educational and ethical testing purposes only. Users are responsible for complying with applicable laws and obtaining necessary permissions before testing any systems they don't own.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ameeshaheshan/PanelFox&type=Date)](https://star-history.com/#ameeshaheshan/PanelFox&Date)
+
+---
+<div align="center">
+Made with ❤️ by Ameesha Heshan
+</div>
