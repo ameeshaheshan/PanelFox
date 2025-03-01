@@ -202,6 +202,8 @@ python app.py -u http://example.com -w {path-to-wordlist}.txt -l
 📌 This command will:
 - -l → Logs all requests and responses.
 
+### With these examples, you can run the tool at different skill levels, from simple scans to stealthy, high-performance penetration tests! 🚀
+
 ## ⚠️ Disclaimer
 
 This tool is for educational and ethical testing purposes only. Users are responsible for complying with applicable laws and obtaining necessary permissions before testing any systems they don't own.
