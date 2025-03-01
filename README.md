@@ -112,7 +112,7 @@ python app.py -u http://example.com -w {path-to-wordlist}.txt
 ### Increase speed with multi-threading
 
 ```bash
-python app.py -u http://example.com -w admin_paths.txt -t 5
+python app.py -u http://example.com -w {path-to-wordlist}.txt -t 5
 ```
 
 📌 This command will:
@@ -122,7 +122,7 @@ python app.py -u http://example.com -w admin_paths.txt -t 5
 ### Use a custom HTTP method
 
 ```bash
-python app.py -u http://example.com -w admin_paths.txt -X POST
+python app.py -u http://example.com -w {path-to-wordlist}.txt -X POST
 ```
 
 📌 This command will:
@@ -132,7 +132,7 @@ python app.py -u http://example.com -w admin_paths.txt -X POST
 ### Set a delay between requests to avoid rate-limiting:
 
 ```bash
-python app.py -u http://example.com -w admin_paths.txt --delay 2
+python app.py -u http://example.com -w {path-to-wordlist}.txt --delay 2
 ```
 
 📌 This command will:
@@ -140,7 +140,7 @@ python app.py -u http://example.com -w admin_paths.txt --delay 2
 
 ### Use a proxy for anonymity:
 ```bash
-python app.py -u http://example.com -w admin_paths.txt -p proxies.txt
+python app.py -u http://example.com -w {path-to-wordlist}.txt -p proxies.txt
 ```
 
 📌 This command will:
@@ -148,7 +148,7 @@ python app.py -u http://example.com -w admin_paths.txt -p proxies.txt
 
 ### Save results to a file:
 ```bash
-python app.py -u http://example.com -w admin_paths.txt -o results.txt
+python app.py -u http://example.com -w {path-to-wordlist}.txt -o results.txt
 ```
 
 📌 This command will:
@@ -158,7 +158,7 @@ python app.py -u http://example.com -w admin_paths.txt -o results.txt
 
 ### Bypass security using custom headers:
 ```bash
-python app.py -u http://example.com -w admin_paths.txt -H "X-Forwarded-For: 127.0.0.1"
+python app.py -u http://example.com -w {path-to-wordlist}.txt -H "X-Forwarded-For: 127.0.0.1"
 ```
 
 📌 This command will:
@@ -166,14 +166,14 @@ python app.py -u http://example.com -w admin_paths.txt -H "X-Forwarded-For: 127.
 
 ### Use a User-Agent list to evade bot detection:
 ```bash
-python app.py -u http://example.com -w admin_paths.txt --user-agent user_agents.txt
+python app.py -u http://example.com -w {path-to-wordlist}.txt --user-agent user_agents.txt
 ```
 📌 This command will:
 - --user-agent user_agents.txt → Rotates User-Agent strings from user_agents.txt to mimic real users.
 
 ### Save HTTP responses for later analysis:
 ```bash
-python app.py -u http://example.com -w admin_paths.txt --save-responses
+python app.py -u http://example.com -w {path-to-wordlist}.txt --save-responses
 ```
 
 📌 This command will:
@@ -181,7 +181,7 @@ python app.py -u http://example.com -w admin_paths.txt --save-responses
 
 ### Filter results by specific HTTP status codes:
 ```bash
-python app.py -u http://example.com -w admin_paths.txt --status-code-filter 200
+python app.py -u http://example.com -w {path-to-wordlist}.txt --status-code-filter 200
 ```
 
 📌 This command will:
@@ -189,7 +189,7 @@ python app.py -u http://example.com -w admin_paths.txt --status-code-filter 200
 
 ### Ignore SSL certificate warnings for HTTPS targets:
 ```bash
-python app.py -u https://example.com -w admin_paths.txt -I
+python app.py -u https://example.com -w {path-to-wordlist}.txt -I
 ```
 
 📌 This command will:
@@ -197,7 +197,7 @@ python app.py -u https://example.com -w admin_paths.txt -I
   
 ### Enable logging for better debugging:
 ```bash
-python app.py -u http://example.com -w admin_paths.txt -l
+python app.py -u http://example.com -w {path-to-wordlist}.txt -l
 ```
 📌 This command will:
 - -l → Logs all requests and responses.
