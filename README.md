@@ -94,3 +94,27 @@ options:
   --status-code-filter STATUS_CODE_FILTER
                         Filter results by HTTP status code
 ```
+
+## 📚 Basic Usage
+
+### Find admin panels using a simple wordlist
+
+```bash
+python app.py -u http://example.com -w {path-to-wordlist}.txt
+```
+
+This command will:
+- -u http://example.com → Specifies the target URL.
+- -w admin_paths.txt → Loads a wordlist of potential admin paths.
+
+## 📚 Intermediate Usage
+
+### Increase speed with multi-threading
+
+```bash
+python app.py -u http://example.com -w admin_paths.txt -t 5
+```
+
+This command will:
+- -t 5 → Uses 5 threads to speed up the scan.
+- Can use t 1 to t 10
