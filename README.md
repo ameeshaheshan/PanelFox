@@ -39,3 +39,19 @@ PanelFox 🦊 is a Python-based admin panel finder designed for penetration test
 - **Cross-Platform Support 💻**: Works on Windows, Linux, and macOS systems.
 - **Customizable Options ⚙️**: Easily configurable to suit different testing environments and websites.
 - **Open Source 🔓**: Completely open-source, allowing you to contribute, modify, or enhance the tool as needed.
+
+## 🚀 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ameeshaheshan/PanelFox.git
+
+# Navigate to the directory
+cd NebulaDork
+
+# Install requirements
+pip install -r requirements.txt
+
+# Run script
+python app.py -h
+```
