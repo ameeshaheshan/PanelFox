@@ -55,3 +55,12 @@ pip install -r requirements.txt
 # Run script
 python app.py -h
 ```
+
+## 💡 Usage
+
+```bash
+usage: app.py [-h] -u URL -w WORD_LIST [-t {1,2,3,4,5,6,7,8,9,10}] [-X {GET,POST,HEAD,PUT,DELETE}]
+              [-H HEADER] [--cookie COOKIE] [--delay DELAY] [--show-headers] [-l] [-v] [-p PROXY]
+              [-o OUTPUT] [-I] [--user-agent USER_AGENT] [--save-responses]
+              [--status-code-filter STATUS_CODE_FILTER]
+```
