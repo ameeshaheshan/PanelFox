@@ -64,3 +64,33 @@ usage: app.py [-h] -u URL -w WORD_LIST [-t {1,2,3,4,5,6,7,8,9,10}] [-X {GET,POST
               [-o OUTPUT] [-I] [--user-agent USER_AGENT] [--save-responses]
               [--status-code-filter STATUS_CODE_FILTER]
 ```
+
+### 🔧 Options
+
+```bash
+Hidden Admin Panel Finder Tool
+
+options:
+  -h, --help            show this help message and exit
+  -u, --url URL         Target URL (e.g. http://example.com)
+  -w, --word-list WORD_LIST
+                        Wordlist file containing admin paths
+  -t, --threads {1,2,3,4,5,6,7,8,9,10}
+                        Number of threads (1-10)
+  -X, --method {GET,POST,HEAD,PUT,DELETE}
+                        HTTP method to use
+  -H, --header HEADER   Add custom headers (e.g. 'X-API-Key: 12345')
+  --cookie COOKIE       Add cookies (e.g. 'session_id=abc123; token=xyz')
+  --delay DELAY         Add random delay between requests (seconds)
+  --show-headers        Display response headers for found pages
+  -l, --log             Enable logging of requests
+  -v, --verbose         Enable verbose mode
+  -p, --proxy PROXY     Proxy list file
+  -o, --output OUTPUT   Save results to a file
+  -I, --ignore-ssl      Ignore SSL certificate warnings
+  --user-agent USER_AGENT
+                        User-Agent list file
+  --save-responses      Save HTTP responses for analysis
+  --status-code-filter STATUS_CODE_FILTER
+                        Filter results by HTTP status code
+```
