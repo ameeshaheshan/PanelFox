@@ -118,3 +118,13 @@ python app.py -u http://example.com -w admin_paths.txt -t 5
 This command will:
 - -t 5 → Uses 5 threads to speed up the scan.
 - Can use t 1 to t 10
+
+### Use a custom HTTP method
+
+```bash
+python app.py -u http://example.com -w admin_paths.txt -X POST
+```
+
+This command will:
+- -X POST → Uses the POST method instead of GET.
+- Can use -X GET, POST, HEAD, PUT, DELETE
